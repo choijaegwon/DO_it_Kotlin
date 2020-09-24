@@ -1,6 +1,6 @@
 package chap07.section1
 
-class ElectricHeater (var heater: Boolean = false) : Heater {
+class ElectricHeater (var heating: Boolean = false) : Heater {
     override fun on(){
         println("[ElectricHeater] heating...")
         heating = true
