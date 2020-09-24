@@ -8,7 +8,7 @@ interface Pet {
     }
 }
 
-class Cat(override var category: String) : Pet{
+class Cat(name: String, override var category: String) : Pet, Animal(name){
     override fun feeding(){
         println("Feed the cat a tuna can!")
     }
@@ -20,3 +20,4 @@ fun main(){
     obj.feeding() // 구현 메서드
     obj.patting() // 기본 메서드
 }
+
